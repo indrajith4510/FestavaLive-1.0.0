@@ -11,41 +11,41 @@ https://templatemo.com/tm-583-festava-live
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #EE5007;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --white-color: #ffffff;
+  --primary-color: #F8CB2E;
+  --secondary-color: #EE5007;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #EE5007;
+  --custom-btn-bg-hover-color: #c01f27;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #B22727;
 
-  --body-font-family:             'Outfit', sans-serif;
+  --body-font-family: 'Outfit', sans-serif;
 
-  --h1-font-size:                 74px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --btn-font-size:                14px;
-  --copyright-font-size:          16px;
+  --h1-font-size: 74px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --btn-font-size: 14px;
+  --copyright-font-size: 16px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
 
 
@@ -106,7 +106,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -232,14 +232,17 @@ strong {
   opacity: 0.35;
 }
 
-.section-overlay + .container {
+.section-overlay+.container {
   position: relative;
 }
 
 .tab-content {
-  background-color: var(--white-color);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: var(--border-radius-medium);
-  padding: 45px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .nav-tabs {
@@ -260,22 +263,22 @@ strong {
   margin-right: 15px;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   color: var(--primary-color);
 }
 
 .nav-tabs h5 {
-  color: var(--p-color); 
+  color: var(--p-color);
   margin-bottom: 0;
 }
 
 .nav-tabs .nav-link.active h5,
-.nav-tabs .nav-link:focus h5, 
+.nav-tabs .nav-link:focus h5,
 .nav-tabs .nav-link:hover h5 {
   color: var(--primary-color);
 }
@@ -398,7 +401,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--secondary-color);
 }
@@ -609,8 +612,8 @@ strong {
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
-  margin: 10px;
-  padding: 25px;
+  margin: 20px;
+  padding: 35px;
   transition: all 0.5s ease;
   transform: translateY(100%);
   position: absolute;
@@ -650,7 +653,8 @@ strong {
   background-position: center;
   background-size: cover;
 }
-.table-responsive {
+
+/* .table-responsive {
 	filter: drop-shadow(2px 2px 4px #606060);
 }
 
@@ -718,8 +722,105 @@ strong {
   color: var(--white-color);
   position: relative;
   z-index: 2;
+} */
+#section_4 {
+  padding: 60px 0 60px 0;
 }
 
+#section_4 .schedule-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#section_4 .schedule-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#section_4 .schedule-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #section_4 .schedule-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section_4 .schedule-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #section_4 .schedule-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#section_4 .schedule-tabs a.active {
+  background-color: var(--custom-btn-bg-color);
+  color: var(--white-color);
+  transition: all 0.3s;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: large;
+}
+
+#section_4 .schedule-tabs a.active:hover {
+  background: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
+}
+
+#section_4 .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  #section_4 .sub-heading {
+    width: 75%;
+  }
+}
+
+#section_4 .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+#section_4 .schedule-item {
+  border-bottom: 1px solid #999;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.carousel {
+  border-radius: 20px;
+}
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  /* height of carousel */
+  margin-right: 10px;
+}
+
+.carousel-cell img {
+  border-radius: 20px;
+  height: 400px;
+}
 
 /*---------------------------------------
   PRICING              
@@ -842,7 +943,7 @@ strong {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .site-footer-link,
@@ -902,7 +1003,7 @@ strong {
   display: block;
 }
 
-.social-icon-link span:hover::before{
+.social-icon-link span:hover::before {
   animation: spinAround 2s linear infinite;
 }
 
@@ -910,6 +1011,7 @@ strong {
   from {
     transform: rotate(0deg)
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -948,7 +1050,7 @@ strong {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--dark-color);
   }
@@ -977,7 +1079,7 @@ strong {
     padding: 20px;
   }
 
-  .schedule-table tr, 
+  .schedule-table tr,
   .schedule-table td {
     padding: 25px;
   }
@@ -995,6 +1097,14 @@ strong {
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .carousel-cell img {
+    height: 200px;
   }
 }
 
@@ -1018,5 +1128,12 @@ strong {
   h5 {
     font-size: 20px;
   }
-}
 
+  .hide {
+    display: none;
+  }
+
+  .carousel-cell img {
+    height: 200px;
+  }
+}
